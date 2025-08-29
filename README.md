@@ -79,7 +79,6 @@ Application → Casos de uso que orquestan la lógica (ej. CheckDbHealthService)
 
 Infrastructure → Adaptadores técnicos, controladores web, repositorios y configuraciones.
 
-
 **⚙️ Configuración**
 
 El archivo application.yml (ubicado en src/main/resources/) debe contener la configuración de la base de datos:
@@ -97,6 +96,7 @@ spring:
     show-sql: true
 ```
 ⚠️ Importante: no subas credenciales reales a tu repositorio. Usa un archivo application-example.yml como plantilla.
+
 
 **▶️ Ejecución**
 
