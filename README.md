@@ -119,3 +119,15 @@ cd cleanapp-master
 ```
 http://localhost:8080
 ```
+
+**📊 Estado del proyecto**
+
+✅ Arquitectura limpia implementada
+
+✅ Conexión a base de datos MySQL
+
+✅ Endpoint de verificación de salud (/health)
+
+✅ Casos de uso para clientes
+
+✅ Pruebas de conexión a BD
