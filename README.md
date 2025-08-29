@@ -79,6 +79,7 @@ Application → Casos de uso que orquestan la lógica (ej. CheckDbHealthService)
 
 Infrastructure → Adaptadores técnicos, controladores web, repositorios y configuraciones.
 
+
 **⚙️ Configuración**
 
 El archivo application.yml (ubicado en src/main/resources/) debe contener la configuración de la base de datos:
@@ -119,6 +120,7 @@ cd cleanapp-master
 ```
 http://localhost:8080
 ```
+
 
 **📊 Estado del proyecto**
 
