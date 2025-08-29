@@ -74,7 +74,9 @@ cleanapp
 **📂 Organización del proyecto**
 
 Domain → Entidades y reglas de negocio (ej. Usuario), puertos de entrada y salida.
+
 Application → Casos de uso que orquestan la lógica (ej. CheckDbHealthService). 
+
 Infrastructure → Adaptadores técnicos, controladores web, repositorios y configuraciones.
 
 **⚙️ Configuración**
