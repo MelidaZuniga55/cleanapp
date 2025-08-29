@@ -28,8 +28,8 @@ MySQL Connector J
 Spring Boot Starter Test
 
 **📂 Estructura del proyecto**
-
-```cleanapp
+```
+cleanapp
 ├── 📄 mvnw
 ├── 📄 mvnw.cmd
 ├── 📄 pom.xml
@@ -68,4 +68,30 @@ Spring Boot Starter Test
 └── 📁 java
 └── 📁 com.esfe.cleanapp
 ├── 📄 CleanappApplicationTests.java
-``└── 📄 DbConnectionSmokeTest.java
+└── 📄 DbConnectionSmokeTest.java
+```
+
+**📂 Organización del proyecto**
+Domain → Entidades y reglas de negocio (ej. Usuario), puertos de entrada y salida.
+Application → Casos de uso que orquestan la lógica (ej. CheckDbHealthService).
+Infrastructure → Adaptadores técnicos, controladores web, repositorios y configuraciones.
+
+**⚙️ Configuración**
+
+El archivo application.yml (ubicado en src/main/resources/) debe contener la configuración de la base de datos:
+```
+spring:
+  datasource:
+    url: jdbc:mysql://<HOST>:<PUERTO>/<DB>
+    username: <USUARIO>
+    password: <CONTRASEÑA>
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+```
+⚠️ Importante: no subas credenciales reales a tu repositorio. Usa un archivo application-example.yml como plantilla.
+
+
