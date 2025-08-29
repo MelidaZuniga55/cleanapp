@@ -69,8 +69,3 @@ Spring Boot Starter Test
 └── 📁 com.esfe.cleanapp
 ├── 📄 CleanappApplicationTests.java
 ``└── 📄 DbConnectionSmokeTest.java
-
-
-
-
-
