@@ -97,4 +97,25 @@ spring:
 ```
 ⚠️ Importante: no subas credenciales reales a tu repositorio. Usa un archivo application-example.yml como plantilla.
 
+**▶️ Ejecución**
 
+1. Clonar el repositorio:
+```
+git clone https://github.com/tuusuario/cleanapp.git
+cd cleanapp-master
+```
+
+2. Compilar con Maven:
+```
+./mvnw clean install
+```
+
+3. Levantar la aplicación:
+```
+./mvnw spring-boot:run
+```
+
+4. La aplicación estará disponible en:
+```
+http://localhost:8080
+```
